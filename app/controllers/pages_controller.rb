@@ -22,5 +22,4 @@ class PagesController < ApplicationController
   def contato
     @title = "Contato"
   end
-  
 end
