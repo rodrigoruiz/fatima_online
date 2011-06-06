@@ -1,0 +1,96 @@
+.container
+{
+	width: 710px;
+}
+
+header
+{
+	padding-top: 20px;
+}
+
+section
+{
+	margin-top: 2em;
+	font-size: 120%;
+	padding: 20px;
+	width: 740px;
+}
+
+section h1
+{
+	font-size: 200%;
+}
+
+/* Links */
+
+a:link, a:visited
+{
+	color: #069;
+	text-decoration: none;
+}
+
+/* Navigation */
+
+nav
+{
+	float: left;
+	white-space: nowrap;
+}
+
+nav ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow:hidden;
+}
+
+nav ul li
+{
+	float: left;
+}
+
+nav ul li a:link, a:visited
+{
+	display:block;
+	width: 120px;
+	font-weight: bold;
+	color: #069;
+	background-color: rgb(230, 230, 230);
+	text-align: center;
+	padding: 5px;
+}
+
+nav ul li a:hover, a:active
+{
+	background-color: rgb(192, 192, 192);
+	text-decoration: none;
+}
+
+/* Round corners */
+/*
+#first_link
+{
+	border:2px solid #a1a1a1;
+	backgroung:green;
+	border-radius: 10px;
+}
+*/
+/*
+.round
+{
+	border:2px solid #a1a1a1;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+*/
+
+/* Footer */
+
+footer
+{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 10px;
+}
