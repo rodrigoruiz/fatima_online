@@ -1,0 +1,10 @@
+<h1>Todos os Pacientes</h1>
+<ul class="users">
+	<% @users.each do |user|%>
+		<% unless user.admin?%>
+			<li><%= link_to user.nome, user %>
+			| <%= link_to "deletar", user, :method => :delete, :confirm => "Tem certeza que deseja deletar esse cadastro?",
+																		 :title => "Deletar #{user.nome}" %></li>
+		<% end %>
+	<% end %>
+</ul>

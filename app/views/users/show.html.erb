@@ -1,0 +1,13 @@
+<h1>Informações do cadastro</h1>
+<p>Email: <%= @user.email%></p>
+<p>Nome: <%= @user.nome %></p>
+<p>Profissão: <%= @user.profissao %></p>
+<p>Data de nascimento: <%= @user.data_de_nascimento%></p>
+<p>RG: <%= @user.rg %></p>
+<p>Endereço: <%= @user.endereco %></p>
+<p>Telefone: <%= @user.telefone %></p>
+<p>Convênios: <%= @user.convenios %></p>
+<p>Nome do Pai: <%= @user.nome_do_pai %></p>
+<p>Nome da Mãe: <%= @user.nome_da_mae %></p>
+<br/>
+<%= link_to "Editar cadastro", edit_user_path(current_user) %>

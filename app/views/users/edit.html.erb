@@ -1,0 +1,56 @@
+<h1>Editando paciente</h1>
+
+<%= form_for(@user) do |f| %>
+	<%= render 'shared/error_messages', :object => f.object %>
+	<div class="field">
+		<%= f.label :email %><br/>
+		<%= f.text_field :email %>
+	</div>
+	<div class="field">
+		<%= f.label 'Senha' %><br/>
+		<%= f.password_field :password %>
+	</div>
+	<div class="field">
+		<%= f.label 'Confirmação de senha' %><br/>
+		<%= f.password_field :password_confirmation %>
+	</div>
+	<div class="field">
+		<%= f.label :nome %><br/>
+		<%= f.text_field :nome %>
+	</div>
+	<div class="field">
+		<%= f.label 'Profissão' %><br/>
+		<%= f.text_field :profissao %>
+	</div>
+	<div class="field">
+		<%= f.label :data_de_nascimento %><br/>
+		<%= f.text_field :data_de_nascimento %>
+	</div>
+	<div class="field">
+		<%= f.label :rg %><br/>
+		<%= f.text_field :rg %>
+	</div>
+	<div class="field">
+		<%= f.label 'Endereço' %><br/>
+		<%= f.text_field :endereco %>
+	</div>
+	<div class="field">
+		<%= f.label :telefone %><br/>
+		<%= f.text_field :telefone %>
+	</div>
+	<div class="field">
+		<%= f.label 'Convênios' %><br/>
+		<%= f.text_field :convenios %>
+	</div>
+	<div class="field">
+		<%= f.label :nome_do_pai %><br/>
+		<%= f.text_field :nome_do_pai %>
+	</div>
+	<div class="field">
+		<%= f.label :nome_da_mae %><br/>
+		<%= f.text_field :nome_da_mae %>
+	</div>
+	<div class="actions">
+		<%= f.submit "Atualizar" %>
+	</div>
+<% end %>

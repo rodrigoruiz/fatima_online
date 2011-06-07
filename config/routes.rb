@@ -1,10 +1,20 @@
 FatimaOnline::Application.routes.draw do
+  get "sessions/new"
+
+  # Routes for PagesController
   root :to => 'pages#home'
   match '/procedimentos', :to => 'pages#procedimentos'
   match '/consultorios', :to => 'pages#consultorios'
   match '/convenios', :to => 'pages#convenios'
   match '/dra_fatima', :to => 'pages#dra_fatima'
   match '/contato', :to => 'pages#contato'
+  
+  # Routes for UsersController
+  resources :users
+  resources :sessions, :only => [:new, :create, :destroy]
+  match '/cadastre_se', :to => 'users#new'
+  match '/login',       :to => 'sessions#new'
+  match '/logout',      :to => 'sessions#destroy'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
